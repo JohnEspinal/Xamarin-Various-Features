@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="VariousFeatures.MainPage"
+             xmlns:local="clr-namespace:VariousFeatures;assembly=VariousFeatures">
+
+    <StackLayout>
+        <local:MyEntry Text="In Shared Code" />
+
+        <Entry Text="Effect attached to an Entry">
+            <Entry.Effects>
+                <local:FocusEffect />
+            </Entry.Effects>
+        </Entry>
+    </StackLayout>
+
+</ContentPage>
+
+
+
+
